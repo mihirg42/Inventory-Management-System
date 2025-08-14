@@ -55,8 +55,8 @@ titleLabel = Label(window, image=bg_image, compound=LEFT, text="  Inventory Mana
                    font=("helvetica", 40, "bold"), fg="white", bg="#010c48", anchor="w", padx=20)
 titleLabel.place(x=0, y=0, relwidth=1)
 
-logoutButton = tkm.Button(window, text="Logout", font=("helvetica", 20, "bold"), fg="#010c48")
-logoutButton.place(x=1100, y=10)
+# logoutButton = tkm.Button(window, text="Logout", font=("helvetica", 20, "bold"), fg="#010c48")
+# logoutButton.place(x=1100, y=10)
 
 subtitleLabel = Label(window, text="Welcome Admin\t\t Date: 07-08-2025\t\t Time: 12:36:17 pm", font=("helvetica", 15),
                       bg='#4d636d', fg='white')
@@ -70,7 +70,7 @@ imageLabel = Label(leftFrame, image=logoImage, bg="#bebebe")
 imageLabel.pack()
 
 menuLabel = Label(leftFrame, text="Menu", font=("helvetica", 20), bg='#009688')
-menuLabel.pack(fill=X)
+menuLabel.pack(fill=X, pady = (50, 0))
 
 employee_button = tkm.Button(leftFrame, cursor="hand2", text="Employees", font=("helvetica", 20, "bold"),
                              command=lambda: show_form(employee_form))
