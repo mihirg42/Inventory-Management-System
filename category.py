@@ -53,6 +53,7 @@ def add_category(id, name, description, treeview):
             cursor.close()
             connection.close()
 
+
 def delete_category(treeview):
     index = treeview.selection()
     if not index:
@@ -75,6 +76,7 @@ def delete_category(treeview):
     finally:
         cursor.close()
         connection.close()
+
 
 def clear(id_entry, category_name_entry, description_text):
     id_entry.delete(0, END)
@@ -131,7 +133,8 @@ def category_form(window):
     add_button.grid(row=0, column=0, padx=20)
 
     delete_button = tkm.Button(button_frame, width=80, height=30, text='Delete', font=("Helvetica", 14),
-                               cursor="hand2", fg="white", bg="#0f4d7d", borderless=1, command = lambda :delete_category(treeview))
+                               cursor="hand2", fg="white", bg="#0f4d7d", borderless=1,
+                               command=lambda: delete_category(treeview))
     delete_button.grid(row=0, column=1, padx=20)
 
     clear_button = tkm.Button(button_frame, width=80, height=30, text='Clear', font=("Helvetica", 14),

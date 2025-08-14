@@ -306,7 +306,7 @@ def employee_form(window):
     search_combobox.set("Search By")
     search_combobox.grid(row=0, column=0, padx=20)
 
-    search_entry = Entry(search_frame, font=("Helvetica", 12), bg="lightyellow", fg = "black")
+    search_entry = Entry(search_frame, font=("Helvetica", 12), bg="lightyellow", fg="black")
     search_entry.grid(row=0, column=1)
 
     search_button = tkm.Button(search_frame, width=100, height=30, text='Search', font=("Helvetica", 12),
@@ -366,17 +366,17 @@ def employee_form(window):
 
     empid_label = Label(detail_frame, text="EmpId", font=("Helvetica", 12), bg="white", fg="black")
     empid_label.grid(row=0, column=0, padx=20, pady=10)
-    empid_entry = Entry(detail_frame, font=("Helvetica", 12), bg="lightyellow", fg = "black")
+    empid_entry = Entry(detail_frame, font=("Helvetica", 12), bg="lightyellow", fg="black")
     empid_entry.grid(row=0, column=1, padx=20, pady=10)
 
     name_label = Label(detail_frame, text="Name", font=("Helvetica", 12), bg="white", fg="black")
     name_label.grid(row=0, column=2, padx=20, pady=10)
-    name_entry = Entry(detail_frame, font=("Helvetica", 12), bg="lightyellow", fg = "black")
+    name_entry = Entry(detail_frame, font=("Helvetica", 12), bg="lightyellow", fg="black")
     name_entry.grid(row=0, column=3, padx=20, pady=10)
 
     email_label = Label(detail_frame, text="Email", font=("Helvetica", 12), bg="white", fg="black")
     email_label.grid(row=0, column=4, padx=20, pady=10)
-    email_entry = Entry(detail_frame, font=("Helvetica", 12), bg="lightyellow", fg = "black")
+    email_entry = Entry(detail_frame, font=("Helvetica", 12), bg="lightyellow", fg="black")
     email_entry.grid(row=0, column=5, padx=20, pady=10)
 
     gender_label = Label(detail_frame, text="Gender", font=("Helvetica", 12), bg="white", fg="black")
@@ -393,7 +393,7 @@ def employee_form(window):
 
     contact_label = Label(detail_frame, text="Contact", font=("Helvetica", 12), bg="white", fg="black")
     contact_label.grid(row=1, column=4, padx=20, pady=10)
-    contact_entry = Entry(detail_frame, font=("Helvetica", 12), bg="lightyellow", fg = "black")
+    contact_entry = Entry(detail_frame, font=("Helvetica", 12), bg="lightyellow", fg="black")
     contact_entry.grid(row=1, column=5, padx=20, pady=10)
 
     employment_type_label = Label(detail_frame, text="Employment Type", font=("Helvetica", 12), bg="white", fg="black")
@@ -424,7 +424,7 @@ def employee_form(window):
 
     address_label = Label(detail_frame, text="Address", font=("Helvetica", 12), bg="white", fg="black")
     address_label.grid(row=3, column=0, padx=20, pady=10)
-    address_text = Text(detail_frame, width=20, height=4, font=("Helvetica", 12), bg="lightyellow", fg = "black")
+    address_text = Text(detail_frame, width=20, height=4, font=("Helvetica", 12), bg="lightyellow", fg="black")
     address_text.grid(row=3, column=1, rowspan=2)
 
     doj_label = Label(detail_frame, text="Date of Joining", font=("Helvetica", 12), bg="white", fg="black")
@@ -442,12 +442,12 @@ def employee_form(window):
 
     salary_label = Label(detail_frame, text="Salary", font=("Helvetica", 12), bg="white", fg="black")
     salary_label.grid(row=3, column=4, padx=20, pady=10)
-    salary_entry = Entry(detail_frame, font=("Helvetica", 12), bg="lightyellow", fg = "black")
+    salary_entry = Entry(detail_frame, font=("Helvetica", 12), bg="lightyellow", fg="black")
     salary_entry.grid(row=3, column=5, padx=20, pady=10)
 
     password_label = Label(detail_frame, text="Password", font=("Helvetica", 12), bg="white", fg="black")
     password_label.grid(row=4, column=4, padx=20, pady=10)
-    password_entry = Entry(detail_frame, font=("Helvetica", 12), bg="lightyellow", fg = "black")
+    password_entry = Entry(detail_frame, font=("Helvetica", 12), bg="lightyellow", fg="black")
     password_entry.grid(row=4, column=5, padx=20, pady=10)
 
     button_frame = Frame(employee_frame, bg="white")

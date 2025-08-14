@@ -7,6 +7,7 @@ from products import product_form
 from employees import connect_database
 import time
 
+
 def update():
     cursor, connection = connect_database()
     if not cursor or not connection:
@@ -32,7 +33,10 @@ def update():
     subtitleLabel.config(text=f"\t\t\tWelcome Admin\t\t\t\t {date_time}")
     subtitleLabel.after(1000, update)
 
+
 current_frame = None
+
+
 def show_form(form_function):
     global current_frame
     if current_frame:

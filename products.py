@@ -10,6 +10,7 @@ def show_all(treeview, search_combobox, search_entry):
     search_combobox.set("Search By")
     search_entry.delete(0, END)
 
+
 def search_product(search_combobox, search_entry, treeview):
     if search_combobox.get() == 'Search By':
         messagebox.showinfo('Error', 'Please select an option')
